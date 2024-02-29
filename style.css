@@ -1,0 +1,203 @@
+/* CSS Reser n*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Navigation section */
+#navbar {
+     display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 0;
+    background-color: black; /* Set the background color */
+    padding: 0; /* Optional padding */
+}
+/*#navbar ::before{
+    margin-top: 0;
+    margin-left: 0;
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    z-index: -1;
+ } /* our content will come on it*/
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+#navbar ul li {
+   list-style: none;
+   margin-right: 20px;
+   font-size: 1.3rem; /* Adjust the margin as needed */
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: rgb(252, 251, 251);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+#navbar ul li a:hover {
+ color: black;   
+ background-color: white;
+}
+#home {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    color: rgb(14, 14, 14);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#home::before {
+    margin-top: -80px;
+    padding: 0;
+    content: "";
+    position: absolute;
+    background: url('./food bg1.jpg') center/cover no-repeat;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+#home h1{
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+    font-family: 'Kalnia', serif;
+}
+#home p{
+    color: rgb(252, 249, 249);
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Kalnia', serif;
+}
+.btn{
+    padding:6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+/*service section8 */
+#services {
+    margin: 34px;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+}
+
+#services .box {
+    border: 2px solid brown;
+    margin-top: 20px;
+    padding: 10px; /* Add padding to the box */
+    margin-right: 20px; /* Add margin between boxes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 28px;
+    background: #f2f2f2/* Center content horizontally within the box */
+}
+
+#services .box img {
+    height: 100px; /* Set the height of the image */
+    width: auto; /* Maintain the aspect ratio */
+    margin-bottom: 10px; /* Add margin between image and text */
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
+
+/* Clients Section */
+#client-section{
+    height:344px;
+    text-align: center;
+    font-size: 2.2rem;
+}
+/*
+#client-section ::before{
+    margin-top: 330px;
+    padding: 0;
+    content: "";
+    position: absolute;
+    background: url('./pexels-narda-yescas-1566837.jpg') center/cover no-repeat;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: 4;
+    top: 0;
+    left: 0;
+} */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    margin-top: 30px;
+    height:100px;
+    margin-right: 80px;
+}
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact h1{
+    position: relative; /* Make the heading position relative to its normal position */
+    z-index: 1; /* Ensure the heading is above the background */
+    margin-top: -50px;
+    color: white; /* Adjust the value as needed to move the heading up */
+}
+    
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url('./contact us.avif') no-repeat;
+    background-size: cover; /* This ensures the image covers the entire area */
+    height: 500px;
+    width: 100%; /* Set the width to 100% to spread horizontally across the row */
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+#contact-box {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 34px;
+    align-items: center;
+} 
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+#contact-box label{
+    color: aliceblue;
+    font-size: 1.6rem;
+    font-family: 'Kalnia', serif;
+}
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
